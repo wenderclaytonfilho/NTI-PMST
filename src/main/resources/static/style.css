@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: #ff6b6b;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#btn {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+#btn:hover {
+  background-color: #ff8c8c;
+  border-color: #ff8c8c;
+}
+
+#btn-cadastro {
+  background-color: #4ecdc4;
+  border-color: #4ecdc4;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+#btn-cadastro:hover {
+  background-color: #7fe5e5;
+  border-color: #7fe5e5;
+}
+
+/*# sourceMappingURL=style.css.map */

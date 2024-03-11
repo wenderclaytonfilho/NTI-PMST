@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+
+$primary-color: #ff6b6b; 
+$secondary-color: #4ecdc4; 
+$primary-hover-color: #ff8c8c; 
+$secondary-hover-color: #7fe5e5; 
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: $primary-color;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#btn {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: $primary-hover-color;
+    border-color: $primary-hover-color;
+  }
+}
+
+#btn-cadastro {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: $secondary-hover-color;
+    border-color: $secondary-hover-color;
+  }
+}
