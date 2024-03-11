@@ -52,10 +52,11 @@ form {
       border: 1px solid #ccc;
       border-radius: 5px;
       padding: 10px;
-      transition: border-color 0.3s;
+      transition: border-color 0.3s, transform 0.1s;;
 
       &:focus {
         border-color: $primary-color; 
+        transform: scale(1.02);
     }
   }
 }

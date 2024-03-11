@@ -44,10 +44,11 @@ form .form-group .form-control {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, transform 0.1s;
 }
 form .form-group .form-control:focus {
   border-color: #ff6b6b;
+  transform: scale(1.02);
 }
 form #btn {
   background-color: #ff6b6b;
