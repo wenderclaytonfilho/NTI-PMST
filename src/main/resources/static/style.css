@@ -30,16 +30,18 @@ body {
   background-color: #fff;
   border: 2px solid #ff6b6b;
   margin: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.card-header {
+#card-header {
   background-color: #ff6b6b;
   color: #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 30px;
+  padding: 20px 30px;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .card-body {
