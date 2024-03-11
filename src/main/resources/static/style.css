@@ -47,26 +47,33 @@ form .form-group .form-control {
   transition: border-color 0.3s, transform 0.1s;
 }
 form .form-group .form-control:focus {
-  border-color: #ff6b6b;
-  transform: scale(1.02);
+  transform: scale(1);
+}
+form .button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 form #btn {
   background-color: #ff6b6b;
   border-color: #ff6b6b;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 }
 form #btn:hover {
   background-color: #ff8c8c;
   border-color: #ff8c8c;
+  transform: scale(1);
 }
-form #btn-cadastro {
+form #btn-register {
   background-color: #4ecdc4;
   border-color: #4ecdc4;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 }
-form #btn-cadastro:hover {
+form #btn-register:hover {
   background-color: #7fe5e5;
   border-color: #7fe5e5;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=style.css.map */
