@@ -31,36 +31,39 @@
   padding: 30px;
 }
 
-.form-group {
+form {
+  margin-top: 30px;
+}
+form .form-group {
   margin-bottom: 20px;
 }
-
-label {
+form .form-group label {
   font-weight: bold;
 }
-
-.form-control {
+form .form-group .form-control {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
+  transition: border-color 0.3s;
 }
-
-#btn {
+form .form-group .form-control:focus {
+  border-color: #ff6b6b;
+}
+form #btn {
   background-color: #ff6b6b;
   border-color: #ff6b6b;
   transition: background-color 0.3s, border-color 0.3s;
 }
-#btn:hover {
+form #btn:hover {
   background-color: #ff8c8c;
   border-color: #ff8c8c;
 }
-
-#btn-cadastro {
+form #btn-cadastro {
   background-color: #4ecdc4;
   border-color: #4ecdc4;
   transition: background-color 0.3s, border-color 0.3s;
 }
-#btn-cadastro:hover {
+form #btn-cadastro:hover {
   background-color: #7fe5e5;
   border-color: #7fe5e5;
 }

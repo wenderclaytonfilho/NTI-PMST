@@ -38,20 +38,27 @@ $secondary-hover-color: #7fe5e5;
   padding: 30px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
+form {
+  margin-top: 30px; 
 
-label {
-  font-weight: bold;
-}
+  .form-group {
+    margin-bottom: 20px; 
 
-.form-control {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-}
+    label {
+      font-weight: bold;
+    }
 
+    .form-control {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: $primary-color; 
+    }
+  }
+}
 #btn {
   background-color: $primary-color;
   border-color: $primary-color;
@@ -72,4 +79,5 @@ label {
     background-color: $secondary-hover-color;
     border-color: $secondary-hover-color;
   }
+}
 }
