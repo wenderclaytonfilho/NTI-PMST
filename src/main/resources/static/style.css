@@ -52,7 +52,6 @@ form .form-group .form-control:focus {
 form .button-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 form #btn {
