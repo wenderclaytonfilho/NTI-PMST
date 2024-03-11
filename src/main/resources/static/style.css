@@ -55,6 +55,7 @@ form .button-container {
   align-items: center;
 }
 form #btn {
+  margin-right: 10px;
   background-color: #ff6b6b;
   border-color: #ff6b6b;
   transition: background-color 0.3s, border-color 0.3s, transform 0.3s;

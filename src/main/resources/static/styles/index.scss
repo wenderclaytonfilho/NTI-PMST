@@ -59,11 +59,11 @@ form {
 
   .button-container {
     display: flex;
-    justify-content: center; 
-
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
   #btn {
+    margin-right: 10px;
     background-color: $primary-color;
     border-color: $primary-color;
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
@@ -87,4 +87,3 @@ form {
     }
   }
 }
-
