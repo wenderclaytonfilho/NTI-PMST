@@ -1,0 +1,14 @@
+package com.estagio.estagio.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@RestController
+public class controller {
+    @GetMapping(value = "/")
+    public String getMethodName() {
+        return "oi";
+    }
+
+}
