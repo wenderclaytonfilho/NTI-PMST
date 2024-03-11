@@ -13,13 +13,13 @@
         <title>Desafio de código NTI PMST</title>
     </head>
     <body>
-        <div class="container" th:fragment="loginForm">
-            <div  class="card">
+        <div class="container">
+            <div id="card"  class="card">
               <div id="card-header" class="card-header">
                 <h3>Desafio de código NTI PMST</h3>
               </div>
               <div class="card-body">
-                <form th:action="@{/login}" method="post">
+                <form>
                   <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input id="email" type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
