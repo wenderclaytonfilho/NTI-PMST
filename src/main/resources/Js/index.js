@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const showPasswordBtn = document.getElementById("showPasswordBtn");
   const senhaInput = document.getElementById("senha");
 
+  const confirmarSenhaInput = document.getElementById("confirmar-senha");
+
+  showPasswordBtn.addEventListener("click", function () {
+    if (confirmarSenhaInput.type === "password") {
+      confirmarSenhaInput.type = "text";
+    } else {
+      confirmarSenhaInput.type = "password";
+    }
+  });
+
   showPasswordBtn.addEventListener("click", function () {
     if (senhaInput.type === "password") {
       senhaInput.type = "text";
