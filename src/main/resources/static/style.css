@@ -1,99 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-body.bg-dark {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-.titulo {
-  color: #ff6b6b;
-  margin-bottom: 20px;
-}
-
-.controles {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-.controles label {
-  margin-right: 10px;
-}
-.controles .filtro {
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ff6b6b;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-}
-.controles .btn-adicionar {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ff6b6b;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.controles .btn-adicionar:hover {
-  background-color: #ff8c8c;
-}
-
-.lista-tarefas {
-  list-style-type: none;
-  padding: 0;
-}
-.lista-tarefas li {
-  background-color: #444;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.formulario-edicao {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.formulario-edicao h2 {
-  margin-bottom: 10px;
-}
-
-.formulario-edicao .form-group {
-  margin-bottom: 15px;
-}
-
-.formulario-edicao label {
-  font-weight: bold;
-}
-
-.formulario-edicao input[type=text],
-.formulario-edicao select {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #333;
-  color: #fff;
-}
-
-.formulario-edicao button {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.formulario-edicao button:hover {
-  background-color: #0056b3;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -168,6 +73,83 @@ form #btn-register:hover {
   background-color: #7fe5e5;
   border-color: #7fe5e5;
   transform: scale(1);
+}
+
+.titulo {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+  color: #fff;
+}
+.container .form-group {
+  margin-bottom: 15px;
+}
+.container .form-group label {
+  font-weight: bold;
+}
+.container .form-group input[type=text],
+.container .form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+.container button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container button:hover {
+  background-color: #ff8c8c;
+}
+.container .lista-tarefas {
+  list-style-type: none;
+  padding: 0;
+}
+.container .lista-tarefas li {
+  background-color: #444;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.container #form-edicao {
+  display: none;
+}
+.container #form-edicao h2 {
+  margin-bottom: 10px;
+}
+.container #form-edicao .form-group {
+  margin-bottom: 15px;
+}
+.container #form-edicao .form-group input[type=text],
+.container #form-edicao .form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+.container #form-edicao button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container #form-edicao button:hover {
+  background-color: #ff8c8c;
 }
 
 /*# sourceMappingURL=style.css.map */
