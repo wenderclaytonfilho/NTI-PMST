@@ -11,7 +11,7 @@ public class controller {
 
     @GetMapping("/home")
     public ModelAndView home() {
-    ModelAndView mv = new ModelAndView("index");
+    ModelAndView mv = new ModelAndView("tasks");
        return mv;
 
     }
