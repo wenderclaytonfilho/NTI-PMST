@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <input type="checkbox" id="tarefa-${tarefa.id}">
                 <label for="tarefa-${tarefa.id}">${tarefa.descricao} - ${tarefa.prioridade}</label>
                 <button class="btn btn-secondary btn-editar" data-id="${tarefa.id}">Editar</button>
+                <button class="btn btn-danger btn-excluir" data-id="${tarefa.id}">Excluir</button>
             `;
       listaTarefas.appendChild(itemTarefa);
     });
@@ -35,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
           edicaoPrioridadeSelect.value = tarefaSelecionada.prioridade;
           formEdicao.style.display = "block";
         }
+      });
+    });
+
+    const botoesExcluir = document.querySelectorAll(".btn-excluir");
+    botoesExcluir.forEach(function (botao) {
+      botao.addEventListener("click", function (event) {
+        const id = event.target.getAttribute("data-id");
+        excluirTarefa(id);
       });
     });
   }
@@ -79,6 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index !== -1) {
       tarefas[index].descricao = descricao;
       tarefas[index].prioridade = prioridade;
+      renderizarTarefas();
+    }
+  }
+
+  function excluirTarefa(id) {
+    const index = tarefas.findIndex((tarefa) => tarefa.id === parseInt(id));
+    if (index !== -1) {
+      tarefas.splice(index, 1);
       renderizarTarefas();
     }
   }
