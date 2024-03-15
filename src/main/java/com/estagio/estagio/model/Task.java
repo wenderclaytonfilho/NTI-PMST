@@ -1,25 +1,15 @@
 package com.estagio.estagio.model;
 
 public class Task {
-    private long id;
     private String description;
     private String priority;
 
     
-    public Task(long id, String description, String priority) {
-        this.id = id;
+    public Task(String description, String priority) {
         this.description = description;
         this.priority = priority;
     }
 
-   
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getDescription() {
         return description;

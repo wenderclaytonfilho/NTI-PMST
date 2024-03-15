@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +45,22 @@ public class controller {
     public String tasksPage() {
         return "tasks";
     }
+    
+    @PostMapping("/tasks")
+        public String create(Task task){
+            System.out.println(tasks);
+            Long id =tasks.size()+1L;
+            tasks.add(new Task(task.getDescription(), task.getPriority()));
+            System.out.println(tasks);
+            return "redirect:/tasks";
+        }
+
+    @GetMapping("/list")
+        public ModelAndView updateView(){
+            ModelAndView mv = new ModelAndView("list");
+            mv.addObject("tasks",tasks);
+            return mv;
+        }
 
     @PostMapping("/register")
     public String registerPage() {
