@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EstagioApplication {
 
 	public static void main(String[] args) {
-		//Run
 		SpringApplication.run(EstagioApplication.class, args);
 	}
 

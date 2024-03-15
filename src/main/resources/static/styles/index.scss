@@ -54,29 +54,30 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #btn {
-    margin-right: 10px;
-    background-color: $primary-color;
-    border-color: $primary-color;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    #btn {
+     
+      background-color: $primary-color;
+      border-color: $primary-color;
+      transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 
-    &:hover {
-      background-color: $primary-hover-color;
-      border-color: $primary-hover-color;
-      transform: scale(1);
+      &:hover {
+        background-color: $primary-hover-color;
+        border-color: $primary-hover-color;
+        transform: scale(1);
+      }
     }
-  }
 
-  #btn-register {
-    background-color: $secondary-color;
-    border-color: $secondary-color;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    #btn-register {
+    
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 
-    &:hover {
-      background-color: $secondary-hover-color;
-      border-color: $secondary-hover-color;
-      transform: scale(1);
+      &:hover {
+        background-color: $secondary-hover-color;
+        border-color: $secondary-hover-color;
+        transform: scale(1);
+      }
     }
   }
 }

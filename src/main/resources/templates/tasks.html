@@ -20,7 +20,7 @@
 
             <h1 class="titulo text-center mt-4">Adicionar Tarefa</h1>
 
-            <form id="form-tarefa" method="POST" action="/creat">
+            <form id="form-tarefa" method="POST" action="/tasks">
                 <div class="form-group">
                     <label for="descricao">Descrição:</label>
                     <input name="description" type="text" id="descricao"
@@ -42,7 +42,7 @@
 
             <div id="form-edicao" style="display: none;">
                 <h2>Editar Tarefa</h2>
-                <form id="form-edicao-tarefa">
+                <form method="GET" action="/tasks" id="form-edicao-tarefa">
                     <input type="hidden" id="edicao-id">
                     <div class="form-group">
                         <label for="edicao-descricao">Descrição:</label>
